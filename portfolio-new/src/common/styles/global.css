@@ -1,0 +1,243 @@
+/*@import "tailwindcss";
+
+:root {
+  --color-dark: #121212;
+  --color-light: #fafafa;
+}
+
+html {
+  scroll-behavior: smooth;
+  letter-spacing: 0.3px;
+}
+
+body {
+  background: radial-gradient(
+    ellipse 60% 50% at 50% -30%,
+    rgb(45 212 191 / 15%) 0%,
+    rgb(8 0 0 / 0%)
+  );
+}
+
+input,
+textarea,
+button,
+select,
+div,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dark {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.light {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+#nprogress .bar {
+  background: #15b8a6 !important;
+  height: 2px !important;
+  z-index: 9999999 !important;
+}
+
+#nprogress .bar {
+  position: fixed !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  border: 2px solid rgb(212 212 212);
+  background: rgb(82 82 82);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgb(163 163 163);
+}
+
+@theme {
+  --animate-looping-tag: loop 100s linear infinite;
+
+  @keyframes loop {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}*/
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source "./app/**/*.{js,ts,jsx,tsx}";
+@source "./src/**/*.{js,ts,jsx,tsx}";
+@source "./components/**/*.{js,ts,jsx,tsx}";
+
+@theme {
+  /* =========================
+     FONTS
+  ========================= */
+
+  --font-sans: var(--jakartaSans-font);
+  --font-sora: var(--soraSans-font);
+  --font-code: var(--firaCode-font);
+  --font-emoji: Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+  /* =========================
+     COLORS
+  ========================= */
+
+  --color-darkText: #E4E6EB;
+  --color-dark: #121212;
+  --color-light: #fafafa;
+
+  /* =========================
+     ANIMATIONS
+  ========================= */
+
+  --animate-waving-hand: wave 2s linear infinite;
+  --animate-flying-card: flying 3s infinite normal;
+  --animate-badge-pulse: badge 1.5s ease-out infinite;
+  --animate-looping-tag: loop 100s linear infinite;
+
+  /* =========================
+     KEYFRAMES
+  ========================= */
+
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    10% {
+      transform: rotate(14deg);
+    }
+
+    20% {
+      transform: rotate(-8deg);
+    }
+
+    30% {
+      transform: rotate(14deg);
+    }
+
+    40% {
+      transform: rotate(-4deg);
+    }
+
+    50% {
+      transform: rotate(10deg);
+    }
+
+    60% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes flying {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(0.5rem);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes badge {
+    100% {
+      transform: scaleY(1.7) scaleX(1.25);
+      opacity: 0;
+    }
+  }
+
+  @keyframes loop {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+:root {
+  --color-dark: #121212;
+  --color-light: #fafafa;
+}
+
+html {
+  scroll-behavior: smooth;
+  letter-spacing: 0.3px;
+}
+
+body {
+  background: radial-gradient(
+    ellipse 60% 50% at 50% -30%,
+    rgb(45 212 191 / 15%) 0%,
+    rgb(8 0 0 / 0%)
+  );
+}
+
+input,
+textarea,
+button,
+select,
+div,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#nprogress .bar {
+  background: #15b8a6 !important;
+  height: 2px !important;
+  z-index: 9999999 !important;
+  position: fixed !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  border: 2px solid rgb(212 212 212);
+  background: rgb(82 82 82);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgb(163 163 163);
+}
