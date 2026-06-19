@@ -5,7 +5,7 @@ export const EDUCATION: EducationProps[] = [
     school: 'Eindhoven University of Technology',
     major: 'Computer Science and Engineering',
     logo: '/images/education/TUe.PNG',
-    location: 'Eindhoven, Netherlands 🇺🇸',
+    location: 'Eindhoven, Netherlands 🇳🇱',
     degree: 'Master of Science',
     start_year: 2026,
     end_year: 2028,
@@ -43,7 +43,12 @@ export const EDUCATION: EducationProps[] = [
         'CS2218 - Object Oriented Programming',
         'MD2222 - Software Design'
       ],
-      achievements: []
+      achievements: [
+        'Published a research paper titled "Automobile Reverse Wheel Locking System" in IRJET (2021).',
+        'Led the Machine Learning team at The Robotics Forum (TRF), delivering training sessions on core ML concepts to 100+ students.',
+        'Mentored a team of 3 students in developing and completing their final Machine Learning project.',
+        'Volunteered with Aatmabodh, promoting digital literacy among women and senior citizens.'
+      ]
     }
   },
 ];

@@ -25,7 +25,7 @@ const GoogleDocsEmbed: React.FC<GoogleDocsEmbedProps> = ({
 };
 
 const getDocIdFromUrl = (url: string): string => {
-  const match = url.match(/\/d\/(.*?)\/(edit|preview)/);
+  const match = url.match(/\/d\/(.*?)\/(edit|preview|view)/);
   return match ? match[1] : '';
 };
 

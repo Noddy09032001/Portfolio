@@ -13,7 +13,7 @@ const Introduction = () => {
             </li>
             <li>
               Currently studying in Eindhoven, Netherlands
-              <span className='ml-1.5'>🇺🇸</span>
+              <span className='ml-1.5'>🇳🇱</span>
             </li>
           </ul>
         </div>
