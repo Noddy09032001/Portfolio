@@ -6,6 +6,7 @@ export const TESTIMONIALS: TestimonialsProps[] = [
     name: 'Vivek Vhatkar',
     role: 'Senior Technical Architect',
     organization: 'Relfor Labs Pvt. Ltd.',
+    recommendationType: 'Professional Recommendation',
     date: 'June 2026',
     link: '',
     content:
@@ -16,6 +17,7 @@ export const TESTIMONIALS: TestimonialsProps[] = [
     name: 'Dr. Nilam Upasani',
     role: 'Professor - Department of Computer Science',
     organization: 'Vishwakarma Institute of Technology (VIT), Pune, india',
+    recommendationType: 'MS Recommendation',
     date: 'March 2026',
     link: '',
     content:
@@ -27,6 +29,7 @@ export const TESTIMONIALS: TestimonialsProps[] = [
     name: 'Vedant Deokule',
     role: 'Peer',
     organization: 'Vishwakarma Institute of Technology (VIT), Pune, india',
+    recommendationType: 'LinkedIn Recommendation',
     date: 'March 2026',
     link: 'https://www.linkedin.com/in/vedant-deokule/',
     content:
@@ -41,6 +44,7 @@ export const TESTIMONIALS: TestimonialsProps[] = [
     name: 'Shashwat Malasi',
     role: 'Peer',
     organization: 'Centre for Development of Advanced Computing (C-DAC), India',
+    recommendationType: 'LinkedIn Recommendation',
     date: 'March 2026',
     link: 'https://www.linkedin.com/in/shashwat-malasi/',
     content:

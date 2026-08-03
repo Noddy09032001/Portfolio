@@ -14,8 +14,9 @@ export const EDUCATION: EducationProps[] = [
       coursework: [
         'Advanced Algorithms',
         'Engineering Data-Intensive Systems',
-        'Machine Learning',
-        'Distributed Systems'
+        'Machine Learning Engineering',
+        'Architecture of Distributed Systems',
+        'Formal Design and Analysis of Algorithms'
       ],
       achievements: [
         'Research in AI systems',

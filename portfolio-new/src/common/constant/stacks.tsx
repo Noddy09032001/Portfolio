@@ -1,5 +1,4 @@
 import { FaJava } from 'react-icons/fa';
-import { BsFillBootstrapFill } from 'react-icons/bs';
 import {
   SiFirebase,
   SiJavascript,
@@ -26,6 +25,8 @@ import {
   SiNumpy,
 } from 'react-icons/si';
 import { TbBrandAuth0 } from 'react-icons/tb';
+import { FaLanguage, FaCss3Alt, FaChartBar } from "react-icons/fa";
+import { LuBrainCircuit } from "react-icons/lu";
 
 import {
   MdMemory,
@@ -36,6 +37,8 @@ import {
 
 import { TbMathFunction } from 'react-icons/tb';
 import { BsDiagram3 } from 'react-icons/bs';
+import { TbVectorBezier } from "react-icons/tb";
+import { BsDatabaseFillGear } from "react-icons/bs";
 
 
 import type { JSX } from 'react';
@@ -92,6 +95,12 @@ export const STACKS: stacksProps = {
     <BsDiagram3 size={iconSize} className='text-orange-500' />
   ),
 
+  'Data Analysis': <FaChartBar size={iconSize} className='text-blue-500'/>,
+  'CSS': <FaCss3Alt size={iconSize} className='text-black-500'/>,
+  'NLP': <FaLanguage size={iconSize} className='text-green-600'/>,
+  'LLM': <LuBrainCircuit size={iconSize} className='text-purple-500'/>,
+  'RAG': <TbVectorBezier size={iconSize} className='text-yellow-400'/>,
+  'Vector Database': <BsDatabaseFillGear size={iconSize} className='text-yellow-400'/>,
 
   ShadCN: <SiShadcnui size={iconSize} className='text-blue-500' />,
   AuthJS: <TbBrandAuth0 size={iconSize} className='text-purple-500' />,
