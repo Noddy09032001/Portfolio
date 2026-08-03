@@ -3,6 +3,7 @@ export interface TestimonialsProps {
   name: string;
   role: string;
   organization: string;
+  recommendationType: string;
   date: string;
   link: string | null;
   content: string;
